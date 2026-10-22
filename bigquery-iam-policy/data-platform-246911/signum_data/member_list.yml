@@ -1,0 +1,13 @@
+dataset:
+  owner:
+    - projectOwners
+    - serviceAccount:app-service@project-alpha-001.iam.gserviceaccount.com
+  reader:
+    - group:analytics-team@example.com
+    - projectReaders
+  writer:
+    - group:dev-team@example.com
+    - projectWriters
+    - serviceAccount:ingest-prod@data-platform-002.iam.gserviceaccount.com
+    - serviceAccount:backend-service@project-alpha-001.iam.gserviceaccount.com
+    - serviceAccount:pipeline-orchestrator@data-platform-002.iam.gserviceaccount.com # T000000
